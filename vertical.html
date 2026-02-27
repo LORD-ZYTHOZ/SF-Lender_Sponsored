@@ -9,24 +9,21 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
       width: 100%;
-      min-height: 100vh;
       background: transparent;
       font-family: 'DM Sans', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .sf-strip {
       background: #0f1f3d;
-      border-radius: clamp(8px, 3vw, 14px);
+      border-radius: clamp(8px, 2vw, 12px);
       overflow: hidden;
       display: flex;
       flex-direction: column;
       box-shadow: 0 4px 24px rgba(15,31,61,.18);
       animation: sfFadeUp .45s ease both;
-      width: clamp(180px, 22vw, 220px);
-      min-height: clamp(500px, 70vh, 650px);
+      width: clamp(180px, 100%, 220px);
+      min-height: 632px;
+      margin: 0 auto;
     }
 
     /* ── Logo — flush top ── */
