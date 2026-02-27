@@ -19,6 +19,7 @@
       animation: sfFadeUp .45s ease both;
       width: 100%;
       max-width: 220px;
+      min-height: 50vh;
     }
 
     /* ── Logo — flush top ── */
@@ -29,7 +30,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 14px 16px;
+      padding: 20px 16px;
+      flex: 1;
     }
     .sf-strip-logo {
       width: 100%;
@@ -53,9 +55,13 @@
 
     /* ── Brand Name + Tagline ── */
     .sf-brand-slot {
-      padding: 12px 16px;
+      padding: 18px 16px;
       border-bottom: 1px solid rgba(255,255,255,.08);
       text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .sf-brand-slot h3 {
       font-family: 'Playfair Display', serif;
@@ -73,9 +79,13 @@
 
     /* ── Rate ── */
     .sf-rate-slot {
-      padding: 16px;
+      padding: 24px 16px;
       border-bottom: 1px solid rgba(255,255,255,.08);
       text-align: center;
+      flex: 1.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .sf-strip-label {
       font-size: 9px;
@@ -117,12 +127,14 @@
 
     /* ── Feature ── */
     .sf-feature-slot {
-      padding: 14px 16px;
+      padding: 20px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       text-align: center;
       gap: 10px;
+      flex: 1.2;
     }
     .sf-feature-icon {
       width: 32px;
