@@ -11,14 +11,14 @@
 
     .sf-strip {
       background: #0f1f3d;
-      border-radius: 12px;
+      border-radius: clamp(8px, 3vw, 14px);
       overflow: hidden;
       display: flex;
       flex-direction: column;
       box-shadow: 0 4px 24px rgba(15,31,61,.18);
       animation: sfFadeUp .45s ease both;
       width: 100%;
-      max-width: 220px;
+      max-width: clamp(180px, 25vw, 260px);
       min-height: 50vh;
     }
 
@@ -30,14 +30,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px 16px;
+      padding: clamp(14px, 4vh, 24px) clamp(12px, 3vw, 20px);
       flex: 1;
     }
     .sf-strip-logo {
       width: 100%;
-      max-width: 140px;
-      height: 44px;
-      border-radius: 6px;
+      max-width: clamp(100px, 80%, 160px);
+      height: clamp(36px, 8vh, 52px);
+      border-radius: clamp(4px, 1vw, 8px);
       background: rgba(255,255,255,.06);
       border: 1.5px dashed rgba(255,255,255,.2);
       display: flex;
@@ -45,7 +45,7 @@
       justify-content: center;
     }
     .sf-strip-logo span {
-      font-size: 8px;
+      font-size: clamp(7px, 1.8vw, 9px);
       font-weight: 600;
       color: rgba(255,255,255,.3);
       text-align: center;
@@ -55,7 +55,7 @@
 
     /* ── Brand Name + Tagline ── */
     .sf-brand-slot {
-      padding: 18px 16px;
+      padding: clamp(12px, 3vh, 22px) clamp(12px, 3vw, 20px);
       border-bottom: 1px solid rgba(255,255,255,.08);
       text-align: center;
       flex: 1;
@@ -65,21 +65,21 @@
     }
     .sf-brand-slot h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 14px;
+      font-size: clamp(12px, 3vw, 16px);
       font-weight: 700;
       color: rgba(255,255,255,.25);
       font-style: italic;
       line-height: 1.2;
     }
     .sf-brand-slot p {
-      font-size: 10px;
+      font-size: clamp(9px, 2vw, 11px);
       color: rgba(255,255,255,.2);
-      margin: 3px 0 0;
+      margin: clamp(2px, 0.5vh, 4px) 0 0;
     }
 
     /* ── Rate ── */
     .sf-rate-slot {
-      padding: 24px 16px;
+      padding: clamp(16px, 4vh, 28px) clamp(12px, 3vw, 20px);
       border-bottom: 1px solid rgba(255,255,255,.08);
       text-align: center;
       flex: 1.5;
@@ -88,58 +88,58 @@
       justify-content: center;
     }
     .sf-strip-label {
-      font-size: 9px;
+      font-size: clamp(8px, 2vw, 10px);
       font-weight: 600;
       color: rgba(255,255,255,.5);
       text-transform: uppercase;
       letter-spacing: .1em;
-      margin-bottom: 4px;
+      margin-bottom: clamp(3px, 1vh, 6px);
     }
     .sf-rate-row {
       display: flex;
       align-items: baseline;
       justify-content: center;
-      gap: 2px;
+      gap: clamp(1px, 0.3vw, 3px);
     }
     .sf-strip-rate {
       font-family: 'Playfair Display', serif;
-      font-size: 36px;
+      font-size: clamp(28px, 8vw, 44px);
       font-weight: 700;
       color: #e8b44a;
       line-height: 1;
     }
     .sf-strip-rate-unit {
-      font-size: 16px;
+      font-size: clamp(12px, 3.5vw, 20px);
       font-weight: 700;
       color: #e8b44a;
     }
     .sf-strip-pa {
-      font-size: 11px;
+      font-size: clamp(9px, 2.2vw, 12px);
       font-weight: 600;
       color: #12a085;
-      margin-top: 4px;
+      margin-top: clamp(3px, 1vh, 6px);
     }
     .sf-strip-comparison {
-      font-size: 9px;
+      font-size: clamp(8px, 1.8vw, 10px);
       color: rgba(255,255,255,.3);
-      margin-top: 2px;
+      margin-top: clamp(1px, 0.5vh, 3px);
     }
 
     /* ── Feature ── */
     .sf-feature-slot {
-      padding: 20px 16px;
+      padding: clamp(14px, 3vh, 24px) clamp(12px, 3vw, 20px);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      gap: 10px;
+      gap: clamp(8px, 2vh, 14px);
       flex: 1.2;
     }
     .sf-feature-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+      width: clamp(26px, 6vw, 38px);
+      height: clamp(26px, 6vw, 38px);
+      border-radius: clamp(6px, 1.5vw, 10px);
       background: rgba(13,124,102,.25);
       border: 1px solid rgba(18,160,133,.3);
       display: flex;
@@ -148,20 +148,20 @@
       flex-shrink: 0;
     }
     .sf-feature-icon svg {
-      width: 16px;
-      height: 16px;
+      width: clamp(12px, 3vw, 18px);
+      height: clamp(12px, 3vw, 18px);
     }
     .sf-feature-text h4 {
       font-family: 'Playfair Display', serif;
-      font-size: 13px;
+      font-size: clamp(11px, 2.8vw, 15px);
       font-weight: 700;
       color: #e8b44a;
       line-height: 1.2;
     }
     .sf-feature-text p {
-      font-size: 10px;
+      font-size: clamp(9px, 2vw, 11px);
       color: rgba(255,255,255,.5);
-      margin: 4px 0 0;
+      margin: clamp(3px, 0.8vh, 6px) 0 0;
       line-height: 1.4;
     }
 
